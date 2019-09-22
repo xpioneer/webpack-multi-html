@@ -1,0 +1,22 @@
+{
+  "name": "webpack-html",
+  "version": "1.0.0",
+  "description": "multi page project use webpack",
+  "main": "index.js",
+  "author": "xpioneer",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.conf.js",
+    "start": "npm run dev",
+    "build": "NODE_ENV=production webpack --config build/webpack.config.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  }
+}
